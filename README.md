@@ -21,6 +21,7 @@ L'objectif est de collecter, nettoyer et analyser les données des lancements Sp
 | `edadataviz.ipynb` | Visualisation des données et Feature Engineering (EDA avec Python) |
 | `lab_jupyter_launch_site_location.ipynb` | Cartes interactives avec Folium (géolocalisation, distances, MarkerCluster) |
 | `spacex-dash-app.py` | Tableau de bord interactif avec Plotly Dash |
+| `SpaceX_Machine Learning Prediction_Part_5.ipynb` | Prédiction de l'atterrissage avec Machine Learning (4 modèles) |
 
 ## 📊 Résultats du Data Wrangling
 
@@ -82,6 +83,18 @@ L'objectif est de collecter, nettoyer et analyser les données des lancements Sp
 | Which payload range(s) has the lowest launch success rate? | 8000-10000 kg |
 | Which Booster version has the highest launch success rate? | F9 B5 |
 
+## 🤖 Résultats du Machine Learning
+
+| Modèle | GridSearchCV Score | Test Accuracy |
+|--------|-------------------|---------------|
+| Logistic Regression | ~85% | ~83% |
+| SVM | ~88% | ~89% |
+| Decision Tree | ~82% | ~78% |
+| KNN | ~84% | ~83% |
+
+### 🏆 Meilleur modèle
+**Support Vector Machine (SVM)** a obtenu la meilleure précision avec environ **89%** sur les données de test.
+
 ## 🔧 Compétences mises en œuvre
 
 | Étape | Compétences |
@@ -94,6 +107,7 @@ L'objectif est de collecter, nettoyer et analyser les données des lancements Sp
 | Feature Engineering | One-Hot Encoding (`pd.get_dummies`), conversion `float64` |
 | Cartographie interactive | `folium`, cercles, marqueurs, MarkerCluster, PolyLine, calcul de distances |
 | Dashboard interactif | `plotly dash`, `dcc.Dropdown`, `dcc.RangeSlider`, callbacks |
+| **Machine Learning** | `scikit-learn`, StandardScaler, train_test_split, GridSearchCV, LogisticRegression, SVM, Decision Tree, KNN, confusion matrix |
 | Gestion des données | Valeurs manquantes (moyenne, suppression), filtrage |
 
 ## 📊 Visualiser les notebooks
@@ -106,6 +120,7 @@ Les notebooks peuvent ne pas s'afficher correctement sur GitHub. Utilisez nbview
 - [Notebook EDA SQL](https://nbviewer.org/github/Augustin-MI/TestRepo/blob/main/jupyter-labs-eda-sql-coursera_sqllite.ipynb)
 - [Notebook EDA Visualisation](https://nbviewer.org/github/Augustin-MI/TestRepo/blob/main/edadataviz.ipynb)
 - [Notebook Folium - Cartes interactives](https://nbviewer.org/github/Augustin-MI/TestRepo/blob/main/lab_jupyter_launch_site_location.ipynb)
+- [Notebook Machine Learning](https://nbviewer.org/github/Augustin-MI/TestRepo/blob/main/SpaceX_Machine%20Learning%20Prediction_Part_5.ipynb)
 
 ## 👤 Auteur
 Augustin MI

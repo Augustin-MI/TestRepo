@@ -1,7 +1,5 @@
 # TestRepo - SpaceX Data Collection
 
-[![nbviewer](https://img.shields.io/badge/View%20in-nbviewer-orange)](https://nbviewer.org/github/Augustin-MI/TestRepo/blob/main/jupyter-labs-spacex-data-collection-api.ipynb)
-
 ## 📌 Description
 Ce dépôt contient les notebooks du projet SpaceX réalisé dans le cadre du cours IBM Data Science.
 
@@ -15,13 +13,13 @@ L'objectif est de collecter, nettoyer et analyser les données des lancements Sp
 | `dataset_part_1.csv` | Données exportées après nettoyage (API) |
 | `jupyter-labs-webscraping.ipynb` | Collecte via Web Scraping (Wikipedia) |
 | `spacex_web_scraped.csv` | Données extraites par Web Scraping |
-| `labs-jupyter-spacex-Data wrangling.ipynb` | Nettoyage et transformation des données (création de la colonne `Class`) |
-| `dataset_part_2.csv` | Données finales avec colonne d'atterrissage (0 = échec, 1 = succès) |
-| `jupyter-labs-eda-sql-coursera_sqllite.ipynb` | Analyse exploratoire des données avec SQL (10 requêtes) |
-| `edadataviz.ipynb` | Visualisation des données et Feature Engineering (EDA avec Python) |
-| `lab_jupyter_launch_site_location.ipynb` | Cartes interactives avec Folium (géolocalisation, distances, MarkerCluster) |
-| `spacex-dash-app.py` | Tableau de bord interactif avec Plotly Dash |
-| `SpaceX_Machine Learning Prediction_Part_5.ipynb` | Prédiction de l'atterrissage avec Machine Learning (4 modèles) |
+| `labs-jupyter-spacex-Data wrangling.ipynb` | Nettoyage et transformation des données |
+| `dataset_part_2.csv` | Données avec colonne d'atterrissage (0 = échec, 1 = succès) |
+| `jupyter-labs-eda-sql-coursera_sqllite.ipynb` | Analyse exploratoire avec SQL |
+| `edadataviz.ipynb` | Visualisation et Feature Engineering |
+| `lab_jupyter_launch_site_location.ipynb` | Cartes interactives avec Folium |
+| `spacex-dash-app.py` | Tableau de bord interactif Plotly Dash |
+| `SpaceX_Machine Learning Prediction_Part_5.ipynb` | Prédiction avec Machine Learning |
 
 ## 📊 Résultats du Data Wrangling
 
@@ -32,10 +30,6 @@ L'objectif est de collecter, nettoyer et analyser les données des lancements Sp
 | Atterrissages échoués (Classe 0) | 30 |
 | **Taux de succès** | **66.67%** |
 
-### Répartition des classes
-- **Classe 1 (succès)** : 60 lancements
-- **Classe 0 (échec)** : 30 lancements
-
 ## 📊 Résultats de l'analyse SQL
 
 | Requête | Résultat |
@@ -44,7 +38,6 @@ L'objectif est de collecter, nettoyer et analyser les données des lancements Sp
 | Masse totale NASA (CRS) | 45 596 kg |
 | Masse moyenne F9 v1.1 | 2 928.4 kg |
 | Premier atterrissage réussi (ground pad) | 2015-12-22 |
-| Boosters avec succès (drone ship, masse 4000-6000 kg) | F9 FT B1022, B1026, B1021.2, B1031.2 |
 | Missions réussies (drone ship) | 14 |
 | Missions réussies (ground pad) | 9 |
 | Missions échouées (drone ship) | 5 |
@@ -67,12 +60,6 @@ L'objectif est de collecter, nettoyer et analyser les données des lancements Sp
 | Distance au chemin de fer (railway) | 1.31 km | Très proche ✅ |
 | Distance à l'autoroute (highway) | 1.84 km | Très proche ✅ |
 
-**Conclusions :**
-- Les sites de lancement sont stratégiquement situés **à proximité immédiate de la côte** (facilité de transport maritime)
-- Ils sont également **bien desservis par les infrastructures** (railways, highways) pour l'acheminement des fusées
-- Les villes sont **suffisamment éloignées** pour des raisons de sécurité
-- Les lancements réussis (vert) sont majoritaires sur tous les sites
-
 ## 📊 Résultats du Tableau de bord Dash
 
 | Question | Réponse |
@@ -85,42 +72,41 @@ L'objectif est de collecter, nettoyer et analyser les données des lancements Sp
 
 ## 🤖 Résultats du Machine Learning
 
-| Modèle | GridSearchCV Score | Test Accuracy |
-|--------|-------------------|---------------|
+| Modèle | Score Validation | Test Accuracy |
+|--------|------------------|---------------|
 | Logistic Regression | ~85% | ~83% |
 | SVM | ~88% | ~89% |
 | Decision Tree | ~82% | ~78% |
 | KNN | ~84% | ~83% |
 
 ### 🏆 Meilleur modèle
-**Support Vector Machine (SVM)** a obtenu la meilleure précision avec environ **89%** sur les données de test.
+**Support Vector Machine (SVM)** avec environ **89%** de précision.
 
 ## 🔧 Compétences mises en œuvre
 
 | Étape | Compétences |
 |-------|-------------|
-| Collecte API | Requêtes HTTP, JSON, `pandas.json_normalize()` |
-| Web Scraping | `BeautifulSoup`, extraction de tableaux HTML |
-| Data Wrangling | Nettoyage, transformation, création de variable cible |
-| EDA avec SQL | `SELECT`, `WHERE`, `GROUP BY`, `ORDER BY`, `substr()`, sous-requêtes |
-| EDA avec Python | `matplotlib`, `seaborn`, `catplot`, graphiques en barres, tendances |
-| Feature Engineering | One-Hot Encoding (`pd.get_dummies`), conversion `float64` |
-| Cartographie interactive | `folium`, cercles, marqueurs, MarkerCluster, PolyLine, calcul de distances |
-| Dashboard interactif | `plotly dash`, `dcc.Dropdown`, `dcc.RangeSlider`, callbacks |
-| **Machine Learning** | `scikit-learn`, StandardScaler, train_test_split, GridSearchCV, LogisticRegression, SVM, Decision Tree, KNN, confusion matrix |
-| Gestion des données | Valeurs manquantes (moyenne, suppression), filtrage |
+| Collecte API | Requêtes HTTP, JSON, pandas |
+| Web Scraping | BeautifulSoup, extraction HTML |
+| Data Wrangling | Nettoyage, transformation |
+| EDA SQL | SELECT, GROUP BY, sous-requêtes |
+| EDA Python | matplotlib, seaborn |
+| Feature Engineering | One-Hot Encoding |
+| Cartographie | folium, MarkerCluster |
+| Dashboard | plotly dash, callbacks |
+| Machine Learning | scikit-learn, GridSearchCV |
 
 ## 📊 Visualiser les notebooks
 
-Les notebooks peuvent ne pas s'afficher correctement sur GitHub. Utilisez nbviewer :
+Les notebooks peuvent être visualisés directement sur GitHub ou avec nbviewer :
 
-- [Notebook API](https://nbviewer.org/github/Augustin-MI/TestRepo/blob/main/jupyter-labs-spacex-data-collection-api.ipynb)
-- [Notebook Web Scraping](https://nbviewer.org/github/Augustin-MI/TestRepo/blob/main/jupyter-labs-spacex-webscraping.ipynb)
-- [Notebook Data Wrangling](https://nbviewer.org/github/Augustin-MI/TestRepo/blob/main/labs-jupyter-spacex-Data%20wrangling.ipynb)
-- [Notebook EDA SQL](https://nbviewer.org/github/Augustin-MI/TestRepo/blob/main/jupyter-labs-eda-sql-coursera_sqllite.ipynb)
-- [Notebook EDA Visualisation](https://nbviewer.org/github/Augustin-MI/TestRepo/blob/main/edadataviz.ipynb)
-- [Notebook Folium - Cartes interactives](https://nbviewer.org/github/Augustin-MI/TestRepo/blob/main/lab_jupyter_launch_site_location.ipynb)
-- [Notebook Machine Learning](https://nbviewer.org/github/Augustin-MI/TestRepo/blob/main/SpaceX_Machine%20Learning%20Prediction_Part_5.ipynb)
+- [Notebook API](https://github.com/Augustin-MI/TestRepo/blob/main/jupyter-labs-spacex-data-collection-api.ipynb)
+- [Notebook Web Scraping](https://github.com/Augustin-MI/TestRepo/blob/main/jupyter-labs-webscraping.ipynb)
+- [Notebook Data Wrangling](https://github.com/Augustin-MI/TestRepo/blob/main/labs-jupyter-spacex-Data%20wrangling.ipynb)
+- [Notebook EDA SQL](https://github.com/Augustin-MI/TestRepo/blob/main/jupyter-labs-eda-sql-coursera_sqllite.ipynb)
+- [Notebook EDA Visualisation](https://github.com/Augustin-MI/TestRepo/blob/main/edadataviz.ipynb)
+- [Notebook Folium](https://github.com/Augustin-MI/TestRepo/blob/main/lab_jupyter_launch_site_location.ipynb)
+- [Notebook Machine Learning](https://github.com/Augustin-MI/TestRepo/blob/main/SpaceX_Machine%20Learning%20Prediction_Part_5.ipynb)
 
 ## 👤 Auteur
 Augustin MI

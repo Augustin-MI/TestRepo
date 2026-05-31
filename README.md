@@ -17,6 +17,7 @@ L'objectif est de collecter, nettoyer et analyser les données des lancements Sp
 | `spacex_web_scraped.csv` | Données extraites par Web Scraping |
 | `labs-jupyter-spacex-Data wrangling.ipynb` | Nettoyage et transformation des données (création de la colonne `Class`) |
 | `dataset_part_2.csv` | Données finales avec colonne d'atterrissage (0 = échec, 1 = succès) |
+| `jupyter-labs-eda-sql-coursera_sqllite.ipynb` | Analyse exploratoire des données avec SQL (10 requêtes) |
 
 ## 📊 Résultats du Data Wrangling
 
@@ -31,6 +32,19 @@ L'objectif est de collecter, nettoyer et analyser les données des lancements Sp
 - **Classe 1 (succès)** : 60 lancements
 - **Classe 0 (échec)** : 30 lancements
 
+## 📊 Résultats de l'analyse SQL
+
+| Requête | Résultat |
+|---------|----------|
+| Sites de lancement uniques | CCAFS LC-40, VAFB SLC-4E, KSC LC-39A, CCAFS SLC-40 |
+| Masse totale NASA (CRS) | 45 596 kg |
+| Masse moyenne F9 v1.1 | 2 928.4 kg |
+| Premier atterrissage réussi (ground pad) | 2015-12-22 |
+| Boosters avec succès (drone ship, masse 4000-6000 kg) | F9 FT B1022, B1026, B1021.2, B1031.2 |
+| Missions réussies (drone ship) | 14 |
+| Missions réussies (ground pad) | 9 |
+| Missions échouées (drone ship) | 5 |
+
 ## 🔧 Compétences mises en œuvre
 
 | Étape | Compétences |
@@ -38,6 +52,7 @@ L'objectif est de collecter, nettoyer et analyser les données des lancements Sp
 | Collecte API | Requêtes HTTP, JSON, `pandas.json_normalize()` |
 | Web Scraping | `BeautifulSoup`, extraction de tableaux HTML |
 | Data Wrangling | Nettoyage, transformation, création de variable cible |
+| EDA avec SQL | `SELECT`, `WHERE`, `GROUP BY`, `ORDER BY`, `substr()`, sous-requêtes |
 | Gestion des données | Valeurs manquantes (moyenne, suppression), filtrage |
 
 ## 📊 Visualiser les notebooks
@@ -47,6 +62,7 @@ Les notebooks peuvent ne pas s'afficher correctement sur GitHub. Utilisez nbview
 - [Notebook API](https://nbviewer.org/github/Augustin-MI/TestRepo/blob/main/jupyter-labs-spacex-data-collection-api.ipynb)
 - [Notebook Web Scraping](https://nbviewer.org/github/Augustin-MI/TestRepo/blob/main/jupyter-labs-spacex-webscraping.ipynb)
 - [Notebook Data Wrangling](https://nbviewer.org/github/Augustin-MI/TestRepo/blob/main/labs-jupyter-spacex-Data%20wrangling.ipynb)
+- [Notebook EDA SQL](https://nbviewer.org/github/Augustin-MI/TestRepo/blob/main/jupyter-labs-eda-sql-coursera_sqllite.ipynb)
 
 ## 👤 Auteur
 Augustin MI

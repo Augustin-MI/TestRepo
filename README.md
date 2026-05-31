@@ -18,6 +18,7 @@ L'objectif est de collecter, nettoyer et analyser les données des lancements Sp
 | `labs-jupyter-spacex-Data wrangling.ipynb` | Nettoyage et transformation des données (création de la colonne `Class`) |
 | `dataset_part_2.csv` | Données finales avec colonne d'atterrissage (0 = échec, 1 = succès) |
 | `jupyter-labs-eda-sql-coursera_sqllite.ipynb` | Analyse exploratoire des données avec SQL (10 requêtes) |
+| `edadataviz.ipynb` | Visualisation des données et Feature Engineering (EDA avec Python) |
 
 ## 📊 Résultats du Data Wrangling
 
@@ -45,6 +46,15 @@ L'objectif est de collecter, nettoyer et analyser les données des lancements Sp
 | Missions réussies (ground pad) | 9 |
 | Missions échouées (drone ship) | 5 |
 
+## 📊 Résultats de l'EDA Visualisation
+
+| Visualisation | Observation clé |
+|---------------|-----------------|
+| Flight Number vs Launch Site | Plus le numéro de vol augmente, plus le taux de succès s'améliore |
+| Payload Mass vs Launch Site | VAFB SLC-4E n'a jamais lancé de charge lourde (>10 000 kg) |
+| Succès par type d'orbite | LEO, ISS et Polar ont les meilleurs taux de réussite |
+| Tendance annuelle | Le taux de succès augmente régulièrement depuis 2013 |
+
 ## 🔧 Compétences mises en œuvre
 
 | Étape | Compétences |
@@ -53,6 +63,8 @@ L'objectif est de collecter, nettoyer et analyser les données des lancements Sp
 | Web Scraping | `BeautifulSoup`, extraction de tableaux HTML |
 | Data Wrangling | Nettoyage, transformation, création de variable cible |
 | EDA avec SQL | `SELECT`, `WHERE`, `GROUP BY`, `ORDER BY`, `substr()`, sous-requêtes |
+| EDA avec Python | `matplotlib`, `seaborn`, `catplot`, graphiques en barres, tendances |
+| Feature Engineering | One-Hot Encoding (`pd.get_dummies`), conversion `float64` |
 | Gestion des données | Valeurs manquantes (moyenne, suppression), filtrage |
 
 ## 📊 Visualiser les notebooks
@@ -63,6 +75,7 @@ Les notebooks peuvent ne pas s'afficher correctement sur GitHub. Utilisez nbview
 - [Notebook Web Scraping](https://nbviewer.org/github/Augustin-MI/TestRepo/blob/main/jupyter-labs-spacex-webscraping.ipynb)
 - [Notebook Data Wrangling](https://nbviewer.org/github/Augustin-MI/TestRepo/blob/main/labs-jupyter-spacex-Data%20wrangling.ipynb)
 - [Notebook EDA SQL](https://nbviewer.org/github/Augustin-MI/TestRepo/blob/main/jupyter-labs-eda-sql-coursera_sqllite.ipynb)
+- [Notebook EDA Visualisation](https://nbviewer.org/github/Augustin-MI/TestRepo/blob/main/edadataviz.ipynb)
 
 ## 👤 Auteur
 Augustin MI

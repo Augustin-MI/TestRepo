@@ -20,6 +20,7 @@ L'objectif est de collecter, nettoyer et analyser les données des lancements Sp
 | `jupyter-labs-eda-sql-coursera_sqllite.ipynb` | Analyse exploratoire des données avec SQL (10 requêtes) |
 | `edadataviz.ipynb` | Visualisation des données et Feature Engineering (EDA avec Python) |
 | `lab_jupyter_launch_site_location.ipynb` | Cartes interactives avec Folium (géolocalisation, distances, MarkerCluster) |
+| `spacex-dash-app.py` | Tableau de bord interactif avec Plotly Dash |
 
 ## 📊 Résultats du Data Wrangling
 
@@ -71,6 +72,16 @@ L'objectif est de collecter, nettoyer et analyser les données des lancements Sp
 - Les villes sont **suffisamment éloignées** pour des raisons de sécurité
 - Les lancements réussis (vert) sont majoritaires sur tous les sites
 
+## 📊 Résultats du Tableau de bord Dash
+
+| Question | Réponse |
+|----------|---------|
+| Which site has the largest successful launches? | CCAFS SLC-40 |
+| Which site has the highest launch success rate? | KSC LC-39A |
+| Which payload range(s) has the highest launch success rate? | 0-2000 kg |
+| Which payload range(s) has the lowest launch success rate? | 8000-10000 kg |
+| Which Booster version has the highest launch success rate? | F9 B5 |
+
 ## 🔧 Compétences mises en œuvre
 
 | Étape | Compétences |
@@ -82,6 +93,7 @@ L'objectif est de collecter, nettoyer et analyser les données des lancements Sp
 | EDA avec Python | `matplotlib`, `seaborn`, `catplot`, graphiques en barres, tendances |
 | Feature Engineering | One-Hot Encoding (`pd.get_dummies`), conversion `float64` |
 | Cartographie interactive | `folium`, cercles, marqueurs, MarkerCluster, PolyLine, calcul de distances |
+| Dashboard interactif | `plotly dash`, `dcc.Dropdown`, `dcc.RangeSlider`, callbacks |
 | Gestion des données | Valeurs manquantes (moyenne, suppression), filtrage |
 
 ## 📊 Visualiser les notebooks

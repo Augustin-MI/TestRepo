@@ -21,56 +21,7 @@ L'objectif est de collecter, nettoyer et analyser les données des lancements Sp
 | `spacex-dash-app.py` | Tableau de bord interactif Plotly Dash |
 | `SpaceX_Machine Learning Prediction_Part_5.ipynb` | Prédiction avec Machine Learning |
 
-## 📊 Résultats du Data Wrangling
-
-| Indicateur | Valeur |
-|------------|--------|
-| Nombre total de lancements Falcon 9 | 90 |
-| Atterrissages réussis (Classe 1) | 60 |
-| Atterrissages échoués (Classe 0) | 30 |
-| **Taux de succès** | **66.67%** |
-
-## 📊 Résultats de l'analyse SQL
-
-| Requête | Résultat |
-|---------|----------|
-| Sites de lancement uniques | CCAFS LC-40, VAFB SLC-4E, KSC LC-39A, CCAFS SLC-40 |
-| Masse totale NASA (CRS) | 45 596 kg |
-| Masse moyenne F9 v1.1 | 2 928.4 kg |
-| Premier atterrissage réussi (ground pad) | 2015-12-22 |
-| Missions réussies (drone ship) | 14 |
-| Missions réussies (ground pad) | 9 |
-| Missions échouées (drone ship) | 5 |
-
-## 📊 Résultats de l'EDA Visualisation
-
-| Visualisation | Observation clé |
-|---------------|-----------------|
-| Flight Number vs Launch Site | Plus le numéro de vol augmente, plus le taux de succès s'améliore |
-| Payload Mass vs Launch Site | VAFB SLC-4E n'a jamais lancé de charge lourde (>10 000 kg) |
-| Succès par type d'orbite | LEO, ISS et Polar ont les meilleurs taux de réussite |
-| Tendance annuelle | Le taux de succès augmente régulièrement depuis 2013 |
-
-## 🗺️ Résultats de l'analyse géographique (Folium)
-
-| Observation | Distance | Conclusion |
-|-------------|----------|-------------|
-| Distance à la côte (coastline) | 0.58 km | Très proche ✅ |
-| Distance à la ville (city) | 19.52 km | Relativement éloigné |
-| Distance au chemin de fer (railway) | 1.31 km | Très proche ✅ |
-| Distance à l'autoroute (highway) | 1.84 km | Très proche ✅ |
-
-## 📊 Résultats du Tableau de bord Dash
-
-| Question | Réponse |
-|----------|---------|
-| Which site has the largest successful launches? | CCAFS SLC-40 |
-| Which site has the highest launch success rate? | KSC LC-39A |
-| Which payload range(s) has the highest launch success rate? | 0-2000 kg |
-| Which payload range(s) has the lowest launch success rate? | 8000-10000 kg |
-| Which Booster version has the highest launch success rate? | F9 B5 |
-
-## 🤖 Résultats du Machine Learning
+## 📊 Résultats du Machine Learning
 
 | Modèle | Score Validation | Test Accuracy |
 |--------|------------------|---------------|
@@ -82,23 +33,9 @@ L'objectif est de collecter, nettoyer et analyser les données des lancements Sp
 ### 🏆 Meilleur modèle
 **Support Vector Machine (SVM)** avec environ **89%** de précision.
 
-## 🔧 Compétences mises en œuvre
-
-| Étape | Compétences |
-|-------|-------------|
-| Collecte API | Requêtes HTTP, JSON, pandas |
-| Web Scraping | BeautifulSoup, extraction HTML |
-| Data Wrangling | Nettoyage, transformation |
-| EDA SQL | SELECT, GROUP BY, sous-requêtes |
-| EDA Python | matplotlib, seaborn |
-| Feature Engineering | One-Hot Encoding |
-| Cartographie | folium, MarkerCluster |
-| Dashboard | plotly dash, callbacks |
-| Machine Learning | scikit-learn, GridSearchCV |
-
 ## 📊 Visualiser les notebooks
 
-Les notebooks peuvent être visualisés directement sur GitHub ou avec nbviewer :
+Cliquez sur les liens ci-dessous pour ouvrir directement les notebooks dans GitHub :
 
 - [Notebook API](https://github.com/Augustin-MI/TestRepo/blob/main/jupyter-labs-spacex-data-collection-api.ipynb)
 - [Notebook Web Scraping](https://github.com/Augustin-MI/TestRepo/blob/main/jupyter-labs-webscraping.ipynb)
